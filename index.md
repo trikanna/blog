@@ -3,4 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home-alt
+title: Home Alt
+permalink: /home-alt/
+feature_image: feature-sea
 ---
