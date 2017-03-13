@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }} | {% if page.title %}{{ page.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <meta property="og:title" content="{{ site.title }} | {% if page.title %}{{ page.title }}{% endif %}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/141816?v=3&u=f3ce6dc10609328e9c2fd3a09cf95fb100f040d5&s=400"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+
+    <!--[if lt IE 9]>
+        <script src="{{ "/js/vendor/html5shiv.min.js" | prepend: site.baseurl }}"></script>
+    <![endif]-->
+</head>

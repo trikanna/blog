@@ -1,28 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
+<html class="no-js">
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+  {% include head.html %}
 
-    <title>Santiago Camelo</title>
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+    {% include nav-no-js.html %}
+    {{ content }}
 
-    <meta property="og:title" content="Santiago Camelo's Blog"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/141816?v=3&u=f3ce6dc10609328e9c2fd3a09cf95fb100f040d5&s=400"/>
-    <meta property="og:url" content="https://www.trikanna.com"/>
-    <meta property="og:description" content="Let's learn new Front End Skills. Free resources. Website and Blog talking about real life Front End Engineering tips and tricks. Tutorials and Video Lessons."/>
+    <script src='{{ "/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js" | prepend: site.baseurl }}'></script>
+    <script src="{{'/js/vendor/jquery-1.11.2.min.js' | prepend: site.baseurl }}"></script>
+    <script src='{{ "/js/vendor/jquery.jpanelmenu.min.js" | prepend: site.baseurl }}'></script>
+    <script type='application/javascript' src='{{ "/js/vendor/fastclick.min.js" | prepend: site.baseurl }}'></script>
+    {% if enable_retina %}
+    <script type='application/javascript' src='{{ "/js/vendor/retina.min.js" | prepend: site.baseurl }}'></script>
+    {% endif %}
+    <script src=' {{ "/js/main.js" | prepend: site.baseurl }}'></script>
 
-    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
+  </body>
 
-</head>
-
-<body>
-
-<h1>JEKYLL_ENV=production jekyll build</h1>
-
-{% if jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
-
-</body>
 </html>

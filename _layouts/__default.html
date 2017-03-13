@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Santiago Camelo</title>
+
+    <meta property="og:title" content="Santiago Camelo's Blog"/>
+    <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/141816?v=3&u=f3ce6dc10609328e9c2fd3a09cf95fb100f040d5&s=400"/>
+    <meta property="og:url" content="https://www.trikanna.com"/>
+    <meta property="og:description" content="Let's learn new Front End Skills. Free resources. Website and Blog talking about real life Front End Engineering tips and tricks. Tutorials and Video Lessons."/>
+
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+</head>
+
+<body>
+
+<h1>JEKYLL_ENV=production jekyll build</h1>
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+
+</body>
+</html>
