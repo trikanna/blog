@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to trikanna.com"
 date:   2017-03-13 00:26:57 -0300
 categories: jekyll update
 ---
