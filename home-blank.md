@@ -1,5 +1,5 @@
 ---
-layout: home-blank
+layout: home-alt
 feature_image: feature-san-fran
 title: Writer
 desc: Short stories from around the campfire for a fellow world explorer.
